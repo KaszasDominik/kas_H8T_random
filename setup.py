@@ -15,8 +15,8 @@ setup(
     zip_safe=True,
     maintainer='ajr',
     maintainer_email='kaszas.d.mark@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Examples of minimal publisher/subscriber using rclcpp',
+    license='Apache License 2.0',
     extras_require={
         'test': [
             'pytest',
