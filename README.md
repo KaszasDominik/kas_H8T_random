@@ -20,39 +20,29 @@ Ez a node feliratkozik egy `std_msgs/msg/Float32MultiArray` típusú topicra, am
 Feltételezzük, hogy a ROS 2 workspace a következő helyen található:
 ~/ros2_ws/
 
-text
-
 ### Clone the package
 cd ~/ros2_ws/src
 git clone https://github.com/gfigneczi1/ign_b7e_array_sorter
 
-text
 
 ### Build the package
 cd ~/ros2_ws
 colcon build --packages-select array_sorter --symlink-install
 
-text
 
 ### Source the workspace
 Ne felejtsd el forrásolni a workspace-t:
 source ~/ros2_ws/install/setup.bash
 
-text
-
----
 
 ## Run the Node
 
 ### Launch fájlon keresztül:
 ros2 launch array_sorter launch_array_sorter.launch.py
 
-text
 
 ### Vagy közvetlenül futtatva:
 ros2 run array_sorter_pkg array_sorter
-
-text
 
 ---
 
@@ -63,7 +53,6 @@ A működés ellenőrzéséhez használd az alábbi parancsokat:
 **Bemeneti, nem rendezett tömb megtekintése:**
 ros2 topic echo /input_array
 
-text
 
 **Kimeneti, rendezett tömb megtekintése:**
 ros2 topic echo /sorted_array
